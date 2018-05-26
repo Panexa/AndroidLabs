@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
             // читаем содержимое
             str = br.readLine();
             str2 = br.readLine();
-            if(str2 == "")
+            if(str == "")
             {
                 Toast.makeText(this, "File is empty!", Toast.LENGTH_LONG).show();
             }

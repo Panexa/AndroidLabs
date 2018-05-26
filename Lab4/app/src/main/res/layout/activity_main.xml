@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Info"
+        android:layout_width="110dp"
+        android:layout_height="19dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="16dp"
+        android:text="Оберіть медіа:"
+        app:layout_constraintBottom_toTopOf="@+id/AudioB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/AudioB"
+        android:layout_width="283dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginStart="16dp"
+        android:onClick="audioCick"
+        android:text="Музика"
+        app:layout_constraintBottom_toTopOf="@+id/VideoB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Info" />
+
+    <Button
+        android:id="@+id/VideoB"
+        android:layout_width="292dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="352dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:onClick="videoCick"
+        android:text="Відео"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AudioB" />
+</android.support.constraint.ConstraintLayout>
